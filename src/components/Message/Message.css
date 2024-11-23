@@ -1,0 +1,23 @@
+.message-text {
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+.message-text.sent-message {
+    border-radius: 6px 0px 6px 6px;
+}
+.message-text.received-message {
+    border-radius: 0px 6px 6px 6px;
+}
+
+.message-time {
+    font-size: 10px;
+    color: #86b5a8;
+}
+
+.sent-message {
+    background-color: #005d4b !important;
+}
+.received-message {
+    background-color: #1f2c34 !important;
+}

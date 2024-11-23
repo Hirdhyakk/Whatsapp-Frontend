@@ -1,0 +1,27 @@
+.utility-bar {
+    background-color: #212e36;
+}
+
+.utility-bar-item {
+    position: relative;
+}
+
+.activeUtility {
+    background-color: #374248 !important;
+}
+
+.utility-bar-item:hover>span {
+    display: block !important;
+}
+
+.utility-bar-hover-text {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    background-color: #ffffff;
+    padding: 4px 15px;
+    border-radius: 15px;
+    z-index: 2;
+    width: max-content;
+}

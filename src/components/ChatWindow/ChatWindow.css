@@ -1,0 +1,11 @@
+.encrypted-text {
+    font-size: 14px;
+}
+.get-whatsapp-btn {
+    background-color: #00a884 !important;
+    border: none;
+    font-size: 14px;
+}
+.get-whatsapp-btn:hover {
+    background-color: #06cf9c !important;
+}

@@ -1,0 +1,8 @@
+.message-area-container {
+    background-image: url(./../../../public/image.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}

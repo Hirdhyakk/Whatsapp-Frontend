@@ -1,0 +1,25 @@
+.message-input-container {
+    background-color: #1f2c34;
+}
+
+input {
+    background-color: #2b3942 !important;
+    color: #ffffff !important;
+    border: 0px !important;
+    transition: none !important;
+    box-shadow: none !important;
+}
+
+::placeholder {
+    color: #617480 !important;
+    opacity: 1;
+}
+
+::-ms-input-placeholder {
+    color: #617480 !important;
+}
+
+.send-button {
+    background-color: transparent;
+    border: none;
+}

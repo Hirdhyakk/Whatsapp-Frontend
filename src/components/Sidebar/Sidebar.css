@@ -1,0 +1,82 @@
+.sidebar {
+    background-color: #121b22;
+}
+
+.activeFilter {
+    background-color: #0e3229 !important;
+    color: #1c917a !important;
+}
+
+.inactiveFilter {
+    background-color: #1f2c34 !important;
+    color: #7a8c98 !important;
+}
+
+.activeChat {
+    background-color: #2b3942 !important;
+}
+.chat:hover {
+    background-color: #2b394271;
+}
+
+.search-bar-container {
+    position: relative;
+}
+
+.search-bar {
+    background-color: #1f2c34 !important;
+    color: #b4bbc1 !important;
+    padding-left: 60px !important;
+}
+
+.search-bar::placeholder {
+    color: #8796a1 !important;
+}
+
+.search-bar-label {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+}
+
+.search-bar-icon-search {
+    animation: rotateAnimation 0.2s linear forwards;
+}
+
+.search-bar-icon-back {
+    rotate: 270deg;
+    animation: rotateAnimation 0.2s linear forwards;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #374045;
+}
+
+/* ::-webkit-scrollbar-button {
+    background: #374045; 
+} */
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} */
+
+.encrypted-text {
+    font-size: 14px;
+}
+.encrypted-text-color {
+    color: #3e96ae;
+}
