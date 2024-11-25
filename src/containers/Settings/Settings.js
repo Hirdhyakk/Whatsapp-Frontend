@@ -2,7 +2,7 @@ import React from 'react'
 
 function Settings() {
   return (
-    <div>Settings</div>
+    <div style={{ display: 'flex', height: '100vh', width: '100%' }}>Settings</div>
   )
 }
 

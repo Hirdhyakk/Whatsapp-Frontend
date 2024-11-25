@@ -2,7 +2,7 @@ import React from 'react'
 
 function Channels() {
   return (
-    <div>Channels</div>
+    <div style={{ display: 'flex', height: '100vh', width: '100%' }}>Channels</div>
   )
 }
 

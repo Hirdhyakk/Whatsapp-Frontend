@@ -2,7 +2,7 @@ import React from 'react'
 
 function Profile() {
   return (
-    <div>Profile</div>
+    <div style={{ display: 'flex', height: '100vh', width: '100%' }}>Profile</div>
   )
 }
 

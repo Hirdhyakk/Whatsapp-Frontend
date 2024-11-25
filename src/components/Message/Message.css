@@ -2,6 +2,7 @@
     font-size: 14px;
     line-height: 1.4;
     word-wrap: break-word;
+    max-width: 400px !important;
 }
 .message-text.sent-message {
     border-radius: 6px 0px 6px 6px;

@@ -15,6 +15,7 @@
 .activeChat {
     background-color: #2b3942 !important;
 }
+
 .chat:hover {
     background-color: #2b394271;
 }
@@ -39,9 +40,9 @@
     left: 30px;
 }
 
-.search-bar-icon-search {
+/* .search-bar-icon-search {
     animation: rotateAnimation 0.2s linear forwards;
-}
+} */
 
 .search-bar-icon-back {
     rotate: 270deg;
@@ -59,7 +60,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -77,6 +78,23 @@
 .encrypted-text {
     font-size: 14px;
 }
+
 .encrypted-text-color {
     color: #3e96ae;
+}
+
+
+.unread-count {
+    font-size: 12px;
+    padding: .1rem .4rem;
+    background-color: #00a884;
+    border-radius: 50%;
+}
+
+.chat-time-unread-msg {
+    color: #00a884;
+}
+
+.chat-time-text {
+    font-size: 12px;
 }

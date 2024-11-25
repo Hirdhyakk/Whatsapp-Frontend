@@ -23,3 +23,9 @@ input {
     background-color: transparent;
     border: none;
 }
+
+.emoji-picker {
+    z-index: 2;
+    position: absolute;
+    bottom: 60px;
+}

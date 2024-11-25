@@ -3,7 +3,7 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 import ChatWindow from '../../components/ChatWindow/ChatWindow'
 import chats from '../../data/data.js'
 
-function Chats() {
+const Chats = () => {
     const [currentChatId, setCurrentChatId] = useState(null);
 
     function EscapeKeyHandler() {

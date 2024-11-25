@@ -1,8 +1,9 @@
 import React from 'react'
 
-function Status() {;
+function Status() {
+  ;
   return (
-    <div>Status</div>
+    <div style={{ display: 'flex', height: '100vh', width: '100%' }}>Status</div>
   )
 }
 

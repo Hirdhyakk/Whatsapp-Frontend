@@ -1,17 +1,25 @@
 import React from "react";
 import "./Message.css"; // Optional: for any additional custom styles if needed.
 
-const Message = ({ message }) => {
+const Message = ({ message, isGroup }) => {
+    // { console.log('isGroup', isGroup) }
     return (
         <div className={`d-flex message-container ${message.messageType === "sent" ? "justify-content-end" : "justify-content-start"} mb-1`}>
             {message.messageType !== "sent" && (
-                <svg color="#1f2c34" viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" className="" version="1.1" x="0px" y="0px" enableBackground="new 0 0 8 13"><title>tail-in</title><path opacity="0.13" fill="#0000000" d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path><path fill="currentColor" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path></svg>
+                <svg color="#1f2c34" viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" className="" version="1.1" x="0px" y="0px" enableBackground="new 0 0 8 13">
+                    <title>tail-in</title><path opacity="0.13" fill="#0000000" d="M1.533,3.568L8,12.193V1H2.812 C1.042,1,0.474,2.156,1.533,3.568z"></path><path fill="currentColor" d="M1.533,2.568L8,11.193V0L2.812,0C1.042,0,0.474,1.156,1.533,2.568z"></path>
+                </svg>
             )}
             <div
                 className={`message-text ${message.messageType === "sent" ? "sent-message" : "received-message"} py-1 px-2`}
                 style={{ maxWidth: "80%", wordWrap: "break-word" }}
             >
-                <div className="m-0 me-4">{message.text}</div>
+                <div className="m-0 me-4">
+                    {isGroup && message.messageType === "received" && (
+                        <div className="fw-semibold" style={{ color: message.colorCode }}>{message.sender}</div>
+                    )}
+                    <div>{message.text}</div>
+                </div>
                 <div className={`d-flex justify-content-end align-items-end text-end message-time ms-4 align-self-end ${message.messageType === "sent" ? "" : ""}`}>
                     <div className="">{message.time}</div>
                     <div className="double-single-check">
@@ -42,7 +50,9 @@ const Message = ({ message }) => {
                 </div>
             </div>
             {message.messageType === "sent" && (
-                <svg color="#005d4b" viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1" x="0px" y="0px" enableBackground="new 0 0 8 13"><title>tail-out</title><path opacity="0.13" d="M5.188,1H0v11.193l6.467-8.625 C7.526,2.156,6.958,1,5.188,1z"></path><path fill="currentColor" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path></svg>
+                <svg color="#005d4b" viewBox="0 0 8 13" height="13" width="8" preserveAspectRatio="xMidYMid meet" version="1.1" x="0px" y="0px" enableBackground="new 0 0 8 13">
+                    <title>tail-out</title><path opacity="0.13" d="M5.188,1H0v11.193l6.467-8.625 C7.526,2.156,6.958,1,5.188,1z"></path><path fill="currentColor" d="M5.188,0H0v11.193l6.467-8.625C7.526,1.156,6.958,0,5.188,0z"></path>
+                </svg>
             )}
 
         </div>
